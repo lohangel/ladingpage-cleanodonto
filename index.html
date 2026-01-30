@@ -80,6 +80,18 @@
         .cta-loren { color: var(--accent) !important; font-weight: 700; text-decoration: none; }
         .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; z-index: 2000; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: 0.3s; }
         .whatsapp-btn:hover { transform: scale(1.1); }
+
+        /* ADICIONADO APENAS AQUI: REGRAS DE CELULAR SEM MUDAR O DESIGN ORIGINAL */
+        @media (max-width: 768px) {
+            .wrapper { margin: 0; width: 100%; border-radius: 0; }
+            .titulo-principal { font-size: 2.2rem; }
+            .nav-menu a:not(.btn) { display: none; }
+            .hero, .doctor-section, .unidades-container { padding: 40px 5%; text-align: center; justify-content: center; }
+            .hero-img, .doctor-img, .unidade-img { min-width: 100%; height: auto; box-shadow: 10px 10px 0px var(--accent); }
+            .hero-content, .doctor-content { min-width: 100%; }
+            .selos-container { justify-content: center; }
+            .whatsapp-btn { width: 55px; height: 55px; font-size: 1.8rem; bottom: 20px; right: 20px; }
+        }
     </style>
 </head>
 <body>
